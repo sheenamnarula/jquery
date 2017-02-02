@@ -1,53 +1,71 @@
-<!DOCTYPE html>
-<html>
-<head>
-<title>Information</title>
-<meta charset="utf-8">
-</head>
-<body>
-<h1>Information Portal</h1>
-<input type = "text" id="title" placeholder="Enter id">
-<BR>
-<button id="search">SEARCH</button>
-<br>
-<br>
-<form id="formElements">
-Name :
-<input type="text" name="names" id="person_name" style="margin-left: 40px">
-<br>
-<br>
-Age :
-<input type="text" name="age" id="age" style="margin-left: 53px;">
-<br>
-<br>
-Contact :
-<input type="text" name="contact" id="contact" style="margin-left: 33px;">
-<br>
-<br>
-Designation :
-<input type="text" name="designation" id="designation" style="margin-left: 13px;">
-<br>
-<br>
-</form>
-<button id="add">ADD RECORD</button>
-<table style="width:100%" id="tabledata">
-</table>
-<table id="tabledata2" style="width: 100% ; display: none">
+	<!DOCTYPE html>
+	<html>
+	<head>
+	<title>Information</title>
+	<meta name="viewport" content="width=device-width">
+	
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 
-	<tr>
-	<td ><input type="text" name="edit_name" id="edit_name"></td>
-	<td ><input type="text" name="edit_age" id="edit_age"></td>
-	<td ><input type="text" name="edit_contact" id="edit_contact"></td>
-	<td ><input type="text" name="edit_designation" id="edit_designation"></td>
-	</tr>
+<!-- 	<link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+ -->		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+		<link rel="stylesheet" type="text/css" href="jquery2_stylesheet.css">
+		
+	<meta charset="utf-8">
+	</head>
+	<body style="background-color: grey">
+	<div class=" container" style="width: 100%">
+	<h1>Information Portal</h1>
+	<div class="row">
+				<div class="col-sm-6">
+					
+	<p>
+	<input type = "text" id="title" placeholder="Enter id/Name/Company">
+	
+	<!-- <button id="search">SEARCH</button> -->
+	<button type="button" class="btn btn-info" id="search">SEARCH</button>
+	</p>
+	<br>
+	<br>
+	<button type="button" class="btn btn-primary" id="displayall">ALL RECORDS</button>
+	</div>
+	<div class="col-sm-6">
+	<form id="formElements">
+	<div class="form-group">
+	<label for="name">Name:</label>
+	<input type="text" class="form-control" id="person_name" >
+	<br>
+	<br>
+	<label for="name">Age:</label>
+	<input type="number" class="form-control" id="age">
+	<br>
+	<br>
+	<label for="name">Contact:</label>
+	<input type="number" class="form-control" id="contact" >
+	<br>
+	<br>
+	<label for="name">Company:</label>
+	<input type="text" class="form-control" id="designation">
+	<br>
+	<br>
+	<button type="button" class="btn btn-success" id="add">ADD RECORD</button>
+	</div>
+	</form>
+	</div>
+	<!-- <button type="button" class="btn btn-default" id="add" style="margin-left: 500px;">ADD RECORD</button> -->
+	<br>
+	<br>
+	</div>
+	  
+	<table class="table" id="tabledata">
+	
+	</table>
+	<script src="https://code.jquery.com/jquery-1.12.4.min.js"
+	integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ="
+	crossorigin="anonymous"></script>
+	<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
 
-</table>
-
-<script
-src="https://code.jquery.com/jquery-1.12.4.min.js"
-integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ="
-crossorigin="anonymous"></script>
-
-<script src = "my_code2.js"></script>
-</body>
-</html>
+	<script src = "my_code2.js"></script>
+	</div>
+	</body>
+	</html>
